@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Demo Nights #2</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- LEFT: 3D Scene -->
+    <div id="scene-panel">
+        <canvas class="webgl"></canvas>
+        <div id="loader">
+            <div id="loader-text">LOADING_</div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- RIGHT: Event Info -->
+    <div id="info-panel">
+
+        <div class="tag-row">
+            <span class="tag tag-orange">Bengaluru</span>
+            <span class="tag tag-dim">Designers Only</span>
+            <span class="tag tag-dim">#2</span>
+        </div>
+
+        <div>
+            <div class="event-title">Design<br>Demo <span>Nights</span></div>
+            <div class="subtitle">for designers, by designers</div>
+        </div>
+
+        <div class="meta-block">
+            <div class="meta-item">
+                <span class="meta-label">Format</span>
+                <span class="meta-value">7-min demos · lightning talks · live builds</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Location</span>
+                <span class="meta-value">Bengaluru, India</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Host</span>
+                <span class="meta-value">Kenneth Dsouza</span>
+            </div>
+        </div>
+
+        <hr class="rule">
+
+        <div class="about-label">About</div>
+        <div class="about-text">
+            AI tools are changing how designers work, think, and create — and yet there are very few spaces to actually talk about it <em>irl</em>. <strong>Design Demo Nights</strong> is a small, curated evening for designers to get together, share what they've been building, and see what others are doing with AI.
+        </div>
+
+        <hr class="rule">
+
+        <div class="about-label">Line-up</div>
+        <div class="schedule">
+            <div class="schedule-item">
+                <span class="schedule-num">01</span>
+                <span class="schedule-name">Kenneth</span>
+                <span class="schedule-topic">Intro</span>
+            </div>
+            <div class="schedule-item">
+                <span class="schedule-num">02</span>
+                <span class="schedule-name">Rasagy</span>
+                <span class="schedule-topic">Creating paintings using code</span>
+            </div>
+            <div class="schedule-item">
+                <span class="schedule-num">03</span>
+                <span class="schedule-name">Anirudh</span>
+                <span class="schedule-topic">Questioning LLM Confidence</span>
+            </div>
+            <div class="schedule-item">
+                <span class="schedule-num">04</span>
+                <span class="schedule-name">Khyati</span>
+                <span class="schedule-topic">Building Chitrly</span>
+            </div>
+            <div class="schedule-item">
+                <span class="schedule-num">05</span>
+                <span class="schedule-name">Rama Krushna</span>
+                <span class="schedule-topic">Blade UI plugins</span>
+            </div>
+            <div class="schedule-item">
+                <span class="schedule-num">06</span>
+                <span class="schedule-name">Shreyas</span>
+                <span class="schedule-topic">Neuro-symbolic AI</span>
+            </div>
+            <div class="schedule-item">
+                <span class="schedule-num">07</span>
+                <span class="schedule-name">Diya</span>
+                <span class="schedule-topic">Portfolio as an instrument</span>
+            </div>
+            <div class="schedule-item">
+                <span class="schedule-num">08</span>
+                <span class="schedule-name">Sakshi</span>
+                <span class="schedule-topic">Splitfree</span>
+            </div>
+            <div class="schedule-item">
+                <span class="schedule-num">09</span>
+                <span class="schedule-name">Faris</span>
+                <span class="schedule-topic">Building blrbloom</span>
+            </div>
+        </div>
+
+        <div class="cta-block">
+            <div class="cta-note">Registration closed · stay tuned for #3</div>
+            <a href="https://luma.com/lkzzn5ab" class="cta-btn" target="_blank">View on Luma →</a>
+            <div class="hosted-by">Presented by <a href="https://luma.com/calendar/cal-Lz8YkYPCTUZPX9t" target="_blank">Design Demo Nights</a></div>
+        </div>
+
+    </div>
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r124/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.124.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://unpkg.com/three@0.124.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="scene.js"></script>
+
+</body>
+</html>
